@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: juiced-golf-live-tee-times
+    env: node
+    plan: free
+    buildCommand: npm install && npx playwright install --with-deps chromium
+    startCommand: npm start
